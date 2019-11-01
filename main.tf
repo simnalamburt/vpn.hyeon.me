@@ -1,3 +1,7 @@
+terraform {
+  required_version = "~> 0.12.12"
+}
+
 provider "google" {
   version = ">= 2.18.1, < 3"
 
