@@ -1,5 +1,13 @@
 terraform {
   required_version = "~> 0.12.12"
+
+  backend "remote" {
+    organization = "simnalamburt"
+
+    workspaces {
+      name = "vpn"
+    }
+  }
 }
 
 provider "google" {
